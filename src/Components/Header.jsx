@@ -15,7 +15,7 @@ const Header = () =>{
    
     return(
         <div className={styles.header}>
-            <img className= {styles.logo} src={LOGO} alt="" width="18%"/>
+            <img className= {styles.logo} src={LOGO} alt="" width="15%"/>
             {menuActive==true?<RxCross1 className={styles.crossIcon} onClick={()=>{toggleMenu()}}/>:<MdOutlineMenu className={styles.menuIcon}  onClick={()=>{toggleMenu()}}/>}
             <div className={menuActive?styles.menuActive: styles.menuDisabled}>
               <div className={styles.menuContainer}>

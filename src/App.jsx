@@ -2,6 +2,7 @@ import styles from './App.module.css'
 import LOGO from './assets/GVES-LOGO.png'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
+import Home from './Components/Home'
 
 function App() {
   
@@ -9,7 +10,8 @@ function App() {
   return (
     <div>
       <Header/>
-      <center><img className={styles.logo} src={LOGO} alt="" width="50%"/></center>
+      {/* <center><img className={styles.logo} src={LOGO} alt="" width="50%"/></center> */}
+      <Home></Home>
       <Footer></Footer>
     </div>
   )
