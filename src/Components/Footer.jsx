@@ -1,5 +1,4 @@
 import styles from './Footer.module.css'
-import { IoLogoLinkedin } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
 import { CgMail } from "react-icons/cg";
 import { PiCopyrightLight } from "react-icons/pi";

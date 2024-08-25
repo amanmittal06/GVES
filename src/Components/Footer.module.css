@@ -5,7 +5,9 @@
     flex-direction: column;
     align-items:flex-start;
     background-color: whitesmoke;
+    background-color: #2986D4;
     color: #d47729;
+    color: white;
     font-size: 100%;
     
 }
@@ -31,6 +33,7 @@
 
 .footerLinks{
     color: #d47729;
+    color: white;
     font-size: 95%;
     text-decoration: none;
     display: flex;
@@ -41,7 +44,7 @@
 }
 
 .hrTag{
-   border: 0.2px solid #d47729;
+   border: 0.2px solid white;
    width: 100%;
 }
 

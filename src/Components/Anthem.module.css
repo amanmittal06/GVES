@@ -1,0 +1,13 @@
+.container{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio{
+    float: center;
+    margin: 6% 2% 6% 2%;
+}

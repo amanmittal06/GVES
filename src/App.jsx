@@ -1,5 +1,3 @@
-import styles from './App.module.css'
-import LOGO from './assets/GVES-LOGO.png'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
 import Home from './Components/Home'

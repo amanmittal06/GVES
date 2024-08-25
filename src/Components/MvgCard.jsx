@@ -16,6 +16,7 @@ const Carousel = ({ mvg }) => {
         autoplay: true,
         autoplaySpeed: 2000,
         adaptiveHeight: true,
+        arrows: false,
     };
 
     return (

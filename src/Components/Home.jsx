@@ -1,9 +1,11 @@
 import styles from './Home.module.css'
 import MvgCard from './MvgCard';
 import { BsRocketTakeoff } from "react-icons/bs";
-import { IoMdEye } from "react-icons/io";
+import { IoMdCall, IoMdEye } from "react-icons/io";
 import { GoGoal } from "react-icons/go";
+import { FaWhatsapp } from "react-icons/fa6";
 import Poster from '../assets/Home.png'
+
 
 
 const Home =()=>{
@@ -17,6 +19,15 @@ const Home =()=>{
     return(
         <div>
             <img src={Poster} alt="" className={styles.poster} width={"97%"}/>
+            
+
+            <div className={styles.callToAction}>
+              <a className={styles.whatsAppButton} href="https://wa.me/916388082087"><FaWhatsapp/>&nbsp;Chat with us</a>
+              <a className={styles.callUsButton} href="tel:+916388082087" target='_blank'><IoMdCall/>&nbsp;Call us</a>
+
+            </div>
+
+
             <div className={styles.introduction}>
             
                 <div className={styles.heading}>
