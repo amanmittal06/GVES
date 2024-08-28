@@ -7,7 +7,7 @@ import Anthem from './Components/Anthem.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/GVES/"> {/* Replace with your base URL */}
+    <BrowserRouter basename="*"> {/* Replace with your base URL */}
       <Routes>
         <Route path="/" element={<App />}></Route>
         <Route path="/anthem" element={<Anthem/>}></Route>
