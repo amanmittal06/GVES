@@ -2,14 +2,21 @@
     "version":2,
     "builds": [
       {
-        "src": "dist/**",
+        "src": "build/**",
         "use": "@vercel/static"
       }
     ],
-    "rewrites": [
-      { 
-        "source": "/(.+)", 
-        "destination": "/dist/$1" 
+   "routes": [
+
+      {
+        "src": "/",
+        "dest": "build/index.html"
+      },
+      {
+       
+        "src": "/(.+)",
+        "dest": "build/$1"
       }
-    ] 
+
+    ]
   }
