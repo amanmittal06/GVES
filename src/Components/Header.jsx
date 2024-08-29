@@ -4,6 +4,8 @@ import LOGO from '../assets/GVES-05.png'
 import { RxCross1 } from "react-icons/rx";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { MdExpandMore, MdExpandLess } from "react-icons/md";
+
 
 const Header = () =>{
 
@@ -12,6 +14,11 @@ const Header = () =>{
         setMenuActive(!menuActive);
     }
 
+    const [expandMenu, setExpandMenu] = useState(false);
+    const toggleExpandMenu = ()=>{
+        setExpandMenu(!expandMenu);
+    }
+    
    
     return(
        <div>
@@ -23,7 +30,15 @@ const Header = () =>{
             <div className={styles.menuContainer}>
                 {/* <Link   className={styles.buttons} to="/results">Results</Link>    */}
                 <Link className={styles.buttons} >Home</Link>
-                <Link className={styles.buttons} >Our schools</Link>
+                <Link className={styles.buttons} >
+                <div className={styles.ourSchools} onClick={()=>{toggleExpandMenu()}}>
+                  <div>Our schools</div>
+                  <div style={{fontSize:'150%', fontWeight:'400'}} > {expandMenu==false?`>`:<MdExpandMore/>} </div>
+                </div>
+                <div className={expandMenu?styles.expandedMenuActive: styles.expandedMenuDisabled}>
+                   {/* <Link>Goudiya Vedanta Vidyalaya</Link> */}
+                </div>
+                </Link>
                 <Link to='/anthem' className={styles.buttons} >Our anthem</Link>
                 <Link className={styles.buttons} >About us</Link>
                 <Link className={styles.buttons} >Contact us</Link>
