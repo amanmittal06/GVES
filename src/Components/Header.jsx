@@ -29,7 +29,7 @@ const Header = () =>{
         <div className={menuActive?styles.menuActive: styles.menuDisabled}>
             <div className={styles.menuContainer}>
                 {/* <Link   className={styles.buttons} to="/results">Results</Link>    */}
-                <Link className={styles.buttons} >Home</Link>
+                <Link className={styles.buttons} to='https://gves.in' title='Goudiya Vedanta Educational Society'>Home</Link>
                 <Link className={`${styles.buttons} ${styles.schools}`} >
                 <div className={styles.ourSchools} onClick={()=>{toggleExpandMenu()}}>
                   <div>Our schools</div>
