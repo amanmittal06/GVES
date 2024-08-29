@@ -18,12 +18,12 @@ const Home =()=>{
 
     return(
         <div>
-            <img src={Poster} alt="" className={styles.poster} width={"97%"}/>
+            <img src={Poster} alt="" className={styles.poster} width={"98%"}/>
             
 
             <div className={styles.callToAction}>
-              <a className={styles.whatsAppButton} href="https://wa.me/916388082087"><FaWhatsapp/>&nbsp;Chat with us</a>
-              <a className={styles.callUsButton} href="tel:+916388082087" target='_blank'><IoMdCall/>&nbsp;Call us</a>
+              <a className={styles.whatsAppButton} href="https://wa.me/919599767637"><FaWhatsapp/>&nbsp;Chat with us</a>
+              <a className={styles.callUsButton} href="tel:+919599767637" target='_blank'><IoMdCall/>&nbsp;Call us</a>
 
             </div>
 

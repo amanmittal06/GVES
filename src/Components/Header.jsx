@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 import { MdOutlineMenu } from "react-icons/md";
-import LOGO from '../assets/GVES-LOGO-2.png'
+import LOGO from '../assets/GVES-05.png'
 import { RxCross1 } from "react-icons/rx";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -16,7 +16,7 @@ const Header = () =>{
     return(
        <div>
         <div className={styles.header}>
-            <img className= {styles.logo} src={LOGO} alt="" width="25%"/>
+            <img className= {styles.logo} src={LOGO} alt="" width="18%"/>
             {menuActive==true?<RxCross1 className={styles.crossIcon} onClick={()=>{toggleMenu()}}/>:<MdOutlineMenu className={styles.menuIcon}  onClick={()=>{toggleMenu()}}/>}   
         </div>
         <div className={menuActive?styles.menuActive: styles.menuDisabled}>
