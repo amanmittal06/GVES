@@ -11,7 +11,7 @@ const Footer = () => {
       <div className={styles.footerSection}> 
           <div className={styles.heading}>CONTACT INFO</div>
           <div className={styles.contactUs}>
-           <p className ={styles.footerLinks}> <IoLocationOutline className={styles.location}/>&nbsp;&nbsp;&nbsp;<div> IGVT, Block B3, near musical fountain park, Janakpuri, New Delhi-110058</div></p>
+           <p className ={styles.footerLinks}> <IoLocationOutline className={styles.location}/>&nbsp;&nbsp;&nbsp;<div> IGVT, Block B3, Near Musical Fountain Park, Janakpuri, New Delhi-110058</div></p>
            <a className ={styles.footerLinks} href="tel:+919599767637" target='_blank'><IoMdCall className={styles.footerIcons}/>&nbsp;&nbsp;+91 9599767637</a>
            <a className ={styles.footerLinks} href="mailto:secretary@gves.in" target='_blank'><CgMail className={styles.footerIcons}/>&nbsp;&nbsp;secretary@gves.in</a>
           </div>
